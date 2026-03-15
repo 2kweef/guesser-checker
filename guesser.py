@@ -13,7 +13,9 @@ while guess != secret:
 
     tries = tries + 1
 
-    if guess < secret:
+    if guess < 1 or guess > 20:
+        print("That number is out of range! Please try one between 1 and 20.")
+    elif guess < secret:
         print("Too low")
     elif guess > secret:
         print("Too high")
